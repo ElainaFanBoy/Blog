@@ -52,7 +52,7 @@ const ContributorsJS = {
         var user = '<div class="user-card">';
         user += '<a class="card-link" target="_blank" rel="external noopener noreferrer"';
         user += ' href="' + item.html_url + '">';
-        user += '<img alt="' + item.login + '" src="' + (item.avatar_url || cfg.avatar) + '" class="lazyload" data-srcset="' + (item.avatar_url || cfg.avatar) + '" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" onerror="errorImgAvatar(this)">';
+        user += '<img alt="' + item.login + '" src="' + (item.avatar_url || cfg.avatar) + '" onerror="errorImgAvatar(this)">';
         user += '<div class="name"><span>' + item.login + '</span></div>';
         user += '</a>';
         user += '</div>';
