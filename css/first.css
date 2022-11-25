@@ -566,12 +566,12 @@ button {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  flex-wrap: wrap;
-  -webkit-flex-wrap: wrap;
-  -khtml-flex-wrap: wrap;
-  -moz-flex-wrap: wrap;
-  -o-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
+  flex-wrap: stretch;
+  -webkit-flex-wrap: stretch;
+  -khtml-flex-wrap: stretch;
+  -moz-flex-wrap: stretch;
+  -o-flex-wrap: stretch;
+  -ms-flex-wrap: stretch;
   align-items: stretch;
   border-radius: 4px;
   -webkit-border-radius: 4px;
