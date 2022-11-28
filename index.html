@@ -1816,7 +1816,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1669439840109),
+    lastupdate: new Date(1669641815424),
     sidebar: {
       for_page: ["blogger","toc","webinfo"],
       for_post: ["toc"],
@@ -2292,6 +2292,40 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+          
+            
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/archives/" title="归档"
                   
                   
@@ -2391,6 +2425,40 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
             
               <li>
                 <a class="menuitem flat-box faa-parent animated-hover"
+                href="/categories/" title="分类"
+                  
+                  
+                  
+                    active-action="action-categories"
+                  >
+                  <i class='fa-solid fa-folder-open fa-fw'></i>分类
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
+                href="/tags/" title="标签"
+                  
+                  
+                  
+                    active-action="action-tags"
+                  >
+                  <i class='fa-solid fa-tags fa-fw'></i>标签
+                </a>
+                
+              </li>
+            
+          
+            
+              
+            
+              <li>
+                <a class="menuitem flat-box faa-parent animated-hover"
                 href="/archives/" title="归档"
                   
                   
@@ -2478,14 +2546,16 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       <p class="title">Ch3rry🍒</p>
     
     
+      <div style="display: flex;flex-direction: row;align-items: center;">
       <p class="subtitle">ONE DAY Ch3rry WILL BE SOMEBODY</p>
+      </div>
     
   </div>
   <div class='bottom'>
     
       <div class="m_search">
         <form name="searchform" class="form u-search-form">
-          <input type="text" class="input u-search-input" placeholder="ONE DAY Ch3rry WILL BE SOMEBODY !!!" />
+          <input type="text" class="input u-search-input" placeholder="The best attack is to attack yourself" />
           <i class="icon fa-solid fa-search fa-fw"></i>
         </form>
       </div>
@@ -2498,21 +2568,35 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
               
               
               active-action="action-home">
-              <p>博客</p>
+              <i class='fa-solid fa-book fa-fw'></i><p>博客</p>
+            </a>
+          
+            <a href="/categories/"
+              
+              
+              active-action="action-categories">
+              <i class='fa-solid fa-folder-open fa-fw'></i><p>分类</p>
+            </a>
+          
+            <a href="/tags/"
+              
+              
+              active-action="action-tags">
+              <i class='fa-solid fa-tags fa-fw'></i><p>标签</p>
             </a>
           
             <a href="/archives/"
               
               
               active-action="action-archives">
-              <p>归档</p>
+              <i class='fa-solid fa-archive fa-fw'></i><p>归档</p>
             </a>
           
             <a href="/about/"
               
               
               active-action="action-about">
-              <p>关于</p>
+              <i class='fa-solid fa-info-circle fa-fw'></i><p>关于</p>
             </a>
           
         
@@ -2535,6 +2619,10 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   <section class="post-list">
     
       
+        
+          
+        
+          
         
           
         
@@ -2741,7 +2829,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
       
         <div class="webinfo-item">
           <div>最后活动时间：</div>
-          <div id="last-update-show">2022-11-26 日</div>
+          <div id="last-update-show">2022-11-28 日</div>
         </div>
       
     </div>
@@ -3947,8 +4035,9 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
     <!-- Custom Files bodyEnd end-->
     <script src="https://gcore.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_slide.js"></script>
     <script src="https://gcore.jsdelivr.net/gh/zyoushuo/Blog/hexo/js/mouse_click.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.11"></script>
-    <script>window.onload=function(){var typed=new Typed(".subtitle",{strings:['ONE DAY Ch3rry WILL BE SOMEBODY','maybe the best of things,','and no good thing ever dies.'],startDelay:1000,typeSpeed:100,loop:!0,backSpeed:50,showCursor:false})}</script>
     <script src="https://gcore.jsdelivr.net/gh/volantis-x/cdn-volantis@2/js/comment_typing.js"></script>
+    <script type="text/javascript" src="https://gcore.jsdelivr.net/gh/Fgaoxing/pandown-js/pandown.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.11"></script>
+    <script>window.onload=function(){var typed=new Typed(".subtitle",{strings:['ONE DAY Ch3rry WILL BE SOMEBODY','maybe the best of things,','and no good thing ever dies.'],startDelay:1000,typeSpeed:100,loop:!0,backSpeed:50,showCursor:!0})}</script>
   </body>
 </html>
