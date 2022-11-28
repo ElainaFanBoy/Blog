@@ -4,12 +4,22 @@
 
     <sitemap>
         <loc>http://ch3rry.cn/post-sitemap.xml</loc>
-        <lastmod>2022-11-23T14:56:27.858Z</lastmod>
+        <lastmod>2022-11-28T16:20:13.080Z</lastmod>
     </sitemap>
 
     <sitemap>
         <loc>http://ch3rry.cn/page-sitemap.xml</loc>
         <lastmod>2022-11-28T10:17:33.032Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>http://ch3rry.cn/category-sitemap.xml</loc>
+        <lastmod>2022-11-28T16:20:13.080Z</lastmod>
+    </sitemap>
+
+    <sitemap>
+        <loc>http://ch3rry.cn/tag-sitemap.xml</loc>
+        <lastmod>2022-11-28T16:20:13.080Z</lastmod>
     </sitemap>
 
 </sitemapindex>
