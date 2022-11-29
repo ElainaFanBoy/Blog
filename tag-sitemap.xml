@@ -3,15 +3,29 @@
 
 
     <url>
-        <loc>http://ch3rry.cn/tags/NoneBot/</loc>
-        <lastmod>2022-11-28T16:27:08.177Z</lastmod>
+        <loc>http://ch3rry.cn/tags/go-CQHTTP/</loc>
+        <lastmod>2022-11-29T12:13:27.839Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>http://ch3rry.cn/tags/helloworld/</loc>
-        <lastmod>2022-11-28T16:27:00.549Z</lastmod>
+        <loc>http://ch3rry.cn/tags/NoneBot/</loc>
+        <lastmod>2022-11-29T12:13:27.839Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ch3rry.cn/tags/QQBot/</loc>
+        <lastmod>2022-11-29T12:13:27.839Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>http://ch3rry.cn/tags/Python/</loc>
+        <lastmod>2022-11-29T12:13:27.839Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
