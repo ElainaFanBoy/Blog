@@ -844,14 +844,14 @@ button {
 }
 @font-face {
   font-family: 'UbuntuMono';
-  src: url("https://fastly.jsdelivr.net/gh/NanakoOfficial/Ch3rry.github.io/assert/UbuntuMono-Regular.ttf");
+  src: url("assert/UbuntuMono-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
 }
 @font-face {
   font-family: 'Varela Round';
-  src: url("https://fastly.jsdelivr.net/gh/NanakoOfficial/Ch3rry.github.io/assert/VarelaRound-Regular.ttf");
+  src: url("assert/VarelaRound-Regular.ttf");
   font-weight: 'normal';
   font-style: 'normal';
   font-display: swap;
