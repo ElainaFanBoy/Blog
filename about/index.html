@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-CN,en,zh-TW,default">
-    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.6'>
+    <head hexo-theme='https://github.com/volantis-x/hexo-theme-volantis/#5.7.7'>
   <meta name="generator" content="Hexo 6.3.0">
-  <meta name="Volantis" content="5.7.6">
+  <meta name="Volantis" content="5.7.7">
   <meta charset="utf-8">
   <!-- SEO相关 -->
   
@@ -522,20 +522,6 @@ button {
   text-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 .cover-wrapper .cover-body .subtitle {
-  display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
-  display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
-  display: -ms-flexbox /* TWEENER - IE 10 */;
-  display: -webkit-flex /* NEW - Chrome */;
-  display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
-  display: flex;
-  -webkit-box-direction: normal;
-  -moz-box-direction: normal;
-  -webkit-box-orient: horizontal;
-  -moz-box-orient: horizontal;
-  -webkit-flex-direction: row;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  align-items: center;
   font-size: 20px;
 }
 .cover-wrapper .cover-body .logo {
@@ -547,20 +533,6 @@ button {
     font-size: 3rem;
   }
   .cover-wrapper .cover-body .subtitle {
-    display: -webkit-box /* OLD - iOS 6-, Safari 3.1-6 */;
-    display: -moz-box /* OLD - Firefox 19- (buggy but mostly works) */;
-    display: -ms-flexbox /* TWEENER - IE 10 */;
-    display: -webkit-flex /* NEW - Chrome */;
-    display: flex /* NEW, Spec - Opera 12.1, Firefox 20+ */;
-    display: flex;
-    -webkit-box-direction: normal;
-    -moz-box-direction: normal;
-    -webkit-box-orient: horizontal;
-    -moz-box-orient: horizontal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    align-items: center;
     font-size: 1.05rem;
   }
   .cover-wrapper .cover-body .logo {
@@ -646,12 +618,12 @@ button {
   -webkit-flex-direction: row;
   -ms-flex-direction: row;
   flex-direction: row;
-  flex-wrap: stretch;
-  -webkit-flex-wrap: stretch;
-  -khtml-flex-wrap: stretch;
-  -moz-flex-wrap: stretch;
-  -o-flex-wrap: stretch;
-  -ms-flex-wrap: stretch;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -khtml-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
   align-items: stretch;
   border-radius: 4px;
   -webkit-border-radius: 4px;
@@ -1818,7 +1790,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     debug: "env",
     cdn: {"js":{"app":"/js/app.js","parallax":"/js/plugins/parallax.js","rightMenu":"/js/plugins/rightMenu.js","rightMenus":"/js/plugins/rightMenus.js","sites":"/js/plugins/tags/sites.js","friends":"/js/plugins/tags/friends.js","contributors":"/js/plugins/tags/contributors.js","search":"/js/search/hexo.js"},"css":{"style":"/css/style.css"}},
     default: {"avatar":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/avatar/round/3442075.svg","link":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/link/8f277b4ee0ecd.svg","cover":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/cover/76b86c0226ffd.svg","image":"https://unpkg.com/volantis-static@0.0.1654736714924/media/placeholder/image/2659360.svg"},
-    lastupdate: new Date(1669783581139),
+    lastupdate: new Date(1669803190284),
     sidebar: {
       for_page: ["blogger","category","tagcloud","toc","webinfo"],
       for_post: ["blogger","category","tagcloud","toc","webinfo"],
@@ -2166,8 +2138,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     volantis.requestAnimationFrame(loop)
   }
   volantis.scroll.handleScrollEvents()
+  volantis.scroll.ele = null;
   // 触发页面滚动至目标元素位置
-  volantis.scroll.to = (ele, option = {}) =>{
+  volantis.scroll.to = (ele, option = {}) => {
+    if (!ele) return;
+    volantis.scroll.ele = ele;
     // 默认配置
     opt = {
       top: ele.getBoundingClientRect().top + document.documentElement.scrollTop,
@@ -2193,8 +2168,11 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
     // 用于处理 lazyload 引起的 cls 导致的定位失败问题
     // option.observer = false
     if (option.observer) {
-      setTimeout(()=>{
-        volantis.scroll.unengine.push(()=>{
+      setTimeout(() => {
+        if (volantis.scroll.ele != ele) {
+          return
+        }
+        volantis.scroll.unengine.push(() => {
           let me = ele.getBoundingClientRect().top
           if(!(me >= -option.observerDic && me <= option.observerDic)){
             volantis.scroll.to(ele, option)
@@ -2237,6 +2215,7 @@ if (/*@cc_on!@*/false || (!!window.MSInputMethodContext && !!document.documentMo
   
   <!-- Custom Files headEnd end-->
 </head>
+  <body itemscope itemtype="http://schema.org/WebPage">
     <!-- import body_begin begin-->
     <!-- import body_begin end-->
     <!-- Custom Files bodyBegin begin-->
@@ -3693,7 +3672,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
               const aplayerItem = item.aplayer; if(!aplayerItem) return;
               const rightAplayerCheck = 'true' === 'true'
                 && item.meta.id === '7770485530';
-              if(rightAplayerCheck) RightMenuAplayer.checkAPlayer();
+              if(rightAplayerCheck && typeof RightMenuAplayer !="undefined") RightMenuAplayer.checkAPlayer();
               if(aplayerItem.events.events.play.every(item => {return item.name !== 'messagePlay'})) {
                 aplayerItem.on('play', function messagePlay() {
                   let index = aplayerItem.list.index;
@@ -3744,9 +3723,8 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
 
 
       <script>
-  
   volantis.layoutHelper("comments",`<div id="beaudar_container"></div>`)
-  
+
   volantis.beaudar = {};
 
   function check_beaudar() {
@@ -3805,6 +3783,7 @@ window.matchMedia('(prefers-color-scheme: light)').addListener(darkModelListener
   volantis.pjax.push(pjax_beaudar);
   volantis.dark.push(dark_beaudar);
 </script>
+
     
 
 
