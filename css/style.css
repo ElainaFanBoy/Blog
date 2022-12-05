@@ -3500,7 +3500,7 @@ img.lazyload:not(.placeholder).loaded {
   border-left: 2px solid #3dd9b6;
 }
 #l_side .toc-wrapper .toc-item.active>.toc-child {
-  max-height: 1000px;
+  max-height: 20000px;
 }
 .md .video-wrap {
   margin: 1.5rem auto;
