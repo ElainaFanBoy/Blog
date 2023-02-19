@@ -3,23 +3,8 @@
 
 
     <sitemap>
-        <loc>http://ch3rry.cn/post-sitemap.xml</loc>
-        <lastmod>2023-02-01T03:01:42.328Z</lastmod>
-    </sitemap>
-
-    <sitemap>
         <loc>http://ch3rry.cn/page-sitemap.xml</loc>
         <lastmod>2022-11-28T10:17:33.032Z</lastmod>
-    </sitemap>
-
-    <sitemap>
-        <loc>http://ch3rry.cn/category-sitemap.xml</loc>
-        <lastmod>2023-02-01T03:01:42.328Z</lastmod>
-    </sitemap>
-
-    <sitemap>
-        <loc>http://ch3rry.cn/tag-sitemap.xml</loc>
-        <lastmod>2023-02-01T03:01:42.328Z</lastmod>
     </sitemap>
 
 </sitemapindex>
